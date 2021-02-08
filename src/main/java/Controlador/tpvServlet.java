@@ -69,17 +69,15 @@ public class tpvServlet extends HttpServlet {
                for ( int i=0;i<listadoProductos.size();i++) {
                    Producto miProducto = listadoProductos.get(i);
                    String categoria = miProducto.getCategoria();
-                    switch ( categoria  ) {
-                        case "hamburguesas":
-                                hamburguesas.add(miProducto);
-                                break;
-                        case "complementos":
-                                complementos.add(miProducto);
-                                break;
-                        case "bebidas":
-                                bebidas.add(miProducto); 
-                                break;
-                    }       
+                        if (  categoria.equals("hamburguesas") ){
+                            hamburguesas.add(miProducto);
+                        }
+                        if (  categoria.equals("complementos") ){
+                            complementos.add(miProducto);
+                        }
+                        if (  categoria.equals("bebidas") ){
+                            bebidas.add(miProducto);
+                        }       
                 } /*for*/
 	}
 
