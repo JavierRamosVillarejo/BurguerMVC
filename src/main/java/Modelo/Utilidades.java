@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * @author DAW2-PROFESOR
  */
 public class Utilidades {
-    public static ArrayList<Producto> getProductos(String fichero) throws FileNotFoundException, IOException{
+    public static ArrayList<Producto> getProductosTexto(String fichero) throws FileNotFoundException, IOException{
 		ArrayList<Producto> productos = new ArrayList<Producto>();
 		
 		try {
